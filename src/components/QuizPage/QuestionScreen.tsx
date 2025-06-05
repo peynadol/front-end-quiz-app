@@ -1,10 +1,29 @@
 import { useState } from "react";
 import QuestionText from "./QuestionText";
 import OptionCard from "./OptionCard";
-const QuestionScreen = ({ topic, setCorrectAnswers, setCurrentScreen }) => {
+
+type Question = {
+  question: string;
+  options: string[];
+  answer: string;
+};
+
+type QuestionScreenProps = {
+  topic: {
+    questions: Question[];
+  };
+  setCorrectAnswers: React.Dispatch<React.SetStateAction<number>>;
+  setCurrentScreen: React.Dispatch<React.SetStateAction<string>>;
+};
+
+const QuestionScreen = ({
+  topic,
+  setCorrectAnswers,
+  setCurrentScreen,
+}: QuestionScreenProps) => {
   const questions = topic.questions;
   const [questionNumber, setQuestionNumber] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   console.log("Question screen", questions);
   console.log(questions.length - 1);
   console.log(questionNumber);
@@ -12,7 +31,7 @@ const QuestionScreen = ({ topic, setCorrectAnswers, setCurrentScreen }) => {
   const answer = questions[questionNumber].answer;
   console.log("answer", answer);
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option: string) => {
     setSelectedAnswer(option);
   };
 

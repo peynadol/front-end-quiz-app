@@ -1,4 +1,13 @@
-const OptionCard = ({ option, selectedAnswer, handleOptionClick }) => {
+type OptionCardProps = {
+  option: string;
+  selectedAnswer: string | null;
+  handleOptionClick: (option: string) => void;
+};
+const OptionCard = ({
+  option,
+  selectedAnswer,
+  handleOptionClick,
+}: OptionCardProps) => {
   const isSelected = selectedAnswer === option;
 
   return (
