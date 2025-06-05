@@ -1,17 +1,10 @@
 import { useState } from "react";
 import QuestionText from "./QuestionText";
 import OptionCard from "./OptionCard";
-
-type Question = {
-  question: string;
-  options: string[];
-  answer: string;
-};
+import type { Topic } from "../../types";
 
 type QuestionScreenProps = {
-  topic: {
-    questions: Question[];
-  };
+  topic: Topic;
   setCorrectAnswers: React.Dispatch<React.SetStateAction<number>>;
   setCurrentScreen: React.Dispatch<React.SetStateAction<string>>;
 };

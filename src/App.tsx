@@ -2,7 +2,6 @@ import data from "../data.json";
 import QuestionScreen from "./components/QuizPage/QuestionScreen";
 import ResultsPage from "./components/ResultsPage/ResultsPage";
 import StartScreen from "./components/StartScreen/StartScreen";
-import TopicCard from "./components/StartScreen/TopicCard";
 import { useState } from "react";
 
 export default function App() {
@@ -16,8 +15,8 @@ export default function App() {
     (topic) => topic.name.toLowerCase() === currentTopic
   );
 
-  const onTopicClick = (topic) => {
-    setCurrentTopic(topic.toLowerCase());
+  const onTopicClick = (topicName: string) => {
+    setCurrentTopic(topicName.toLowerCase());
     setCurrentScreen("quiz");
   };
 
@@ -32,7 +31,7 @@ export default function App() {
           />
         ) : null}
 
-        {currentScreen === "quiz" ? (
+        {currentScreen === "quiz" && foundTopic ? (
           <QuestionScreen
             topic={foundTopic}
             setCorrectAnswers={setCorrectAnswers}

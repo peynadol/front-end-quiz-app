@@ -1,4 +1,12 @@
-const ResultsPage = ({ setCurrentScreen, correctAnswers }) => {
+type ResultsPageProps = {
+  setCurrentScreen: React.Dispatch<React.SetStateAction<string>>;
+  correctAnswers: number;
+};
+
+const ResultsPage = ({
+  setCurrentScreen,
+  correctAnswers,
+}: ResultsPageProps) => {
   const handleRestart = () => {
     setCurrentScreen("start");
   };

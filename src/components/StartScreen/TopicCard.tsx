@@ -1,4 +1,8 @@
-const TopicCard = ({ topic, onTopicClick }) => {
+type TopicCardProps = {
+  topic: string;
+  onTopicClick: () => void;
+};
+const TopicCard = ({ topic, onTopicClick }: TopicCardProps) => {
   return (
     <div
       onClick={onTopicClick}

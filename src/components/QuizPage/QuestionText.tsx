@@ -1,6 +1,5 @@
-import React from "react";
-
-const QuestionText = ({ question }) => {
+type QuestionTextProps = { question: string };
+const QuestionText = ({ question }: QuestionTextProps) => {
   return (
     <>
       <div>{question}</div>

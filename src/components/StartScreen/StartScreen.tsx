@@ -1,7 +1,16 @@
 import TopicCard from "./TopicCard";
 import { useEffect } from "react";
 
-const StartScreen = ({ data, onTopicClick, setCorrectAnswers }) => {
+type StartScreenProps = {
+  data: { topics: { name: string }[] };
+  onTopicClick: (topicName: string) => void;
+  setCorrectAnswers: (count: number) => void;
+};
+const StartScreen = ({
+  data,
+  onTopicClick,
+  setCorrectAnswers,
+}: StartScreenProps) => {
   useEffect(() => {
     setCorrectAnswers(0);
   }, [setCorrectAnswers]);
