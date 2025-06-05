@@ -1,0 +1,124 @@
+{
+  "topics": [
+    {
+      "name": "HTML",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyperlinking Text Mark Language"],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "question": "Which tag is used to define a hyperlink?",
+          "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+          "answer": "<a>"
+        },
+        {
+          "question": "Which tag is used to insert an image?",
+          "options": ["<img>", "<image>", "<src>", "<picture>"],
+          "answer": "<img>"
+        },
+        {
+          "question": "What is the correct HTML for creating an unordered list?",
+          "options": ["<list>", "<ul>", "<ol>", "<li>"],
+          "answer": "<ul>"
+        },
+        {
+          "question": "Which tag is used for the largest heading?",
+          "options": ["<h6>", "<head>", "<h1>", "<heading>"],
+          "answer": "<h1>"
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which property changes text color?",
+          "options": ["font-color", "text-color", "color", "font-style"],
+          "answer": "color"
+        },
+        {
+          "question": "How do you select an element with id 'main'?",
+          "options": ["#main", ".main", "main", "*main"],
+          "answer": "#main"
+        },
+        {
+          "question": "Which property controls font size?",
+          "options": ["font-style", "font-weight", "font-size", "text-size"],
+          "answer": "font-size"
+        },
+        {
+          "question": "How do you make text bold?",
+          "options": ["font-weight: bold;", "font: bold;", "style: bold;", "text-weight: bold;"],
+          "answer": "font-weight: bold;"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "questions": [
+        {
+          "question": "Which symbol is used for comments in JavaScript?",
+          "options": ["//", "/*", "<!-- -->", "**"],
+          "answer": "//"
+        },
+        {
+          "question": "Which method adds an element to the end of an array?",
+          "options": ["push()", "pop()", "shift()", "unshift()"],
+          "answer": "push()"
+        },
+        {
+          "question": "How do you declare a variable?",
+          "options": ["var", "let", "const", "All of the above"],
+          "answer": "All of the above"
+        },
+        {
+          "question": "Which keyword is used to define a function?",
+          "options": ["function", "define", "method", "func"],
+          "answer": "function"
+        },
+        {
+          "question": "What is the result of 2 + '2' in JavaScript?",
+          "options": ["22", "4", "NaN", "undefined"],
+          "answer": "22"
+        }
+      ]
+    },
+    {
+      "name": "Accessibility",
+      "questions": [
+        {
+          "question": "What does 'alt' attribute provide?",
+          "options": ["Alternative text for images", "Alignment of images", "Animation for images", "Anchor for images"],
+          "answer": "Alternative text for images"
+        },
+        {
+          "question": "Which HTML tag improves accessibility for navigation?",
+          "options": ["<div>", "<nav>", "<section>", "<article>"],
+          "answer": "<nav>"
+        },
+        {
+          "question": "What is ARIA used for?",
+          "options": ["Audio support", "Responsive layouts", "Accessibility enhancements", "Animation effects"],
+          "answer": "Accessibility enhancements"
+        },
+        {
+          "question": "Which element provides a label for form controls?",
+          "options": ["<span>", "<label>", "<form>", "<input>"],
+          "answer": "<label>"
+        },
+        {
+          "question": "What should keyboard users be able to do?",
+          "options": ["Navigate using Tab key", "Change browser themes", "Access dev tools", "Enable dark mode"],
+          "answer": "Navigate using Tab key"
+        }
+      ]
+    }
+  ]
+}
